@@ -11,6 +11,8 @@ namespace StockClient
         {
             var client = new RestClient("https://stockserver20201009223011.azurewebsites.net/");
             client.Authenticator = new HttpBasicAuthenticator("01149601@pw.edu.pl", "mA4YBUw");
+
+            //basic operations on provided server - market overview and a list of shares
             
             var stockListRequest = new RestRequest("stockexchanges", DataFormat.Json);
             var stockListJSONResponse = client.Get(stockListRequest);
