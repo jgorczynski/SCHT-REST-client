@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using RestSharp;
 using Newtonsoft.Json;
 using RestSharp.Authenticators;
@@ -9,8 +9,8 @@ namespace StockClient
     {
         static void Main(string[] args)
         {
-            var client = new RestClient("https://stockserver20201009223011.azurewebsites.net/");
-            client.Authenticator = new HttpBasicAuthenticator("01149601@pw.edu.pl", "mA4YBUw");
+            var client = new RestClient("<proper link>");
+            client.Authenticator = new HttpBasicAuthenticator("<mail address>", "<password>");
 
             //basic operations on provided server - market overview and a list of shares
             
